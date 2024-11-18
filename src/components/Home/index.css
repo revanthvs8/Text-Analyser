@@ -1,0 +1,186 @@
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f7fa;
+    color: #333;
+}
+
+.home-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.title {
+    text-align: center;
+    font-size: 2.2rem;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+}
+
+.toolbar {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+}
+.bold{
+    font-weight:1000;
+}
+.underline{
+    text-decoration: underline;
+}
+.style{
+    font-style: italic;
+}
+.paragraph{
+    font-size: 1.1rem;
+    font-weight:700;
+}
+.toolbar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+.toolbar-side {
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+    gap: 10px;
+    font-size: 1.1rem;
+    width:40%;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 1.8rem;
+    color:black;
+}
+
+.text-input {
+    width: 96%;
+    min-height: 150px;
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+    resize: vertical;
+    background-color: #fafafa;
+}
+
+.replace-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.input-field {
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.replace-btn {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.replace-btn:hover {
+    background-color: #218838;
+}
+
+
+.editable {
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    min-height: 100px;
+    margin-bottom: 20px;
+    box-shadow: inset 0 1px 4px rgba(0, 0, 0, 0.05);
+    font-size: 1rem;
+    overflow-wrap: break-word;
+}
+
+
+.highlight {
+    background-color: #ffea7f;
+    padding: 2px 4px;
+    border-radius: 3px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 768px) {
+    .toolbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .text-input {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+
+    .replace-section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .input-field,
+    .replace-btn {
+        max-width:70%;
+    }
+    .toolbar-side {
+      
+        width:90%;
+
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .title {
+        font-size: 1.8rem;
+    }
+   .replace-btn {
+        text-align: center;
+            }
+    .toolbar-item {
+        font-size: 1rem;
+    }
+
+    .text-input {
+        font-size: 0.85rem;
+        padding: 8px;
+    }
+
+    .replace-btn {
+        padding: 10px;
+        font-size: 0.95rem;
+    }
+}
